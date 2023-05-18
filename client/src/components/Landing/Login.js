@@ -43,8 +43,6 @@ const StyledCheck = styled.div`
 
     label {
         font-size: 14px;
-        height: 19px;
-        line-height: 1.2;
     }
     
     label::before {
