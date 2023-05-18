@@ -4,6 +4,7 @@ import Login from "../components/Landing/Login";
 import Main from "../components/Landing/Main";
 import Sign from "../components/Landing/Sign";
 import logo from "../assets/logo.png";
+import guestLogin from "../util/guestLogin";
 
 const Wrapper = styled.div`
 `
@@ -74,7 +75,7 @@ const Landing = ({ setIsLanded }) => {
                             onClick={() => setSelected(1)}>
                             시작하기
                         </li>
-                        <li>
+                        <li onClick={() => guestLogin(setIsLanded)}>
                             게스트로 입장하기
                         </li>
                     </ul>
