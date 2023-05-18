@@ -74,6 +74,9 @@ const Landing = ({ setIsLanded }) => {
                             onClick={() => setSelected(1)}>
                             시작하기
                         </li>
+                        <li>
+                            게스트로 입장하기
+                        </li>
                     </ul>
                 </nav>
             </StyledHeader>
