@@ -1,7 +1,7 @@
 import axios from "axios";
-import { decode } from "./decode";
-import useModal from "../hooks/useModal";
-import Cookie from "./Cookie";
+import { decode } from "../util/decode";
+import useModal from "./useModal";
+import Cookie from "../util/Cookie";
 
 export const useGuest = (setIsLanded) => {
     const { open, close, Modal } = useModal();
@@ -31,6 +31,7 @@ export const useGuest = (setIsLanded) => {
         })
         .catch(e => {
             // 오류처리 필요
+            console.log(e);
             open();
         })
     }
