@@ -4,7 +4,7 @@ import Login from "../components/Landing/Login";
 import Main from "../components/Landing/Main";
 import Sign from "../components/Landing/Sign";
 import logo from "../assets/logo.png";
-import { useGuest } from "../util/useGuest";
+import { useGuest } from "../hooks/useGuest";
 
 const Wrapper = styled.div`
 `
@@ -58,7 +58,7 @@ const StyledHeader = styled.header`
 
 const Landing = ({ setIsLanded }) => {
     const [ selected, setSelected ] = useState(0);
-    const { guestLogin, open, Modal } = useGuest();
+    const { guestLogin, open, Modal } = useGuest(setIsLanded);
 
     return (
         <Wrapper>
@@ -92,7 +92,7 @@ const Landing = ({ setIsLanded }) => {
                 selected === 2 && <Sign setSelected={setSelected} />
             }
             <Modal>
-                <p>현재 사용 불가능한 기능입니다.</p>
+                <p>현재 게스트 입장이 불가능합니다.</p>
             </Modal>
         </Wrapper>
     )
