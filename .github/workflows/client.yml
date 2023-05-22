@@ -14,7 +14,8 @@ jobs:
         run: |
           echo "REACT_APP_API=${{secrets.REACT_APP_API}}" >> .env
           echo "REACT_APP_CHAT=${{secrets.REACT_APP_CHAT}}" >> .env
-          echo "PUBLIC_URL=${{secrets.PUBLIC_URL}}" >> .env
+          echo "REACT_APP_GUEST_ID=${{secrets.REACT_APP_GUEST_ID}}" >> .env
+          echo "REACT_APP_GUEST_PW=${{secrets.REACT_APP_GUEST_PW}}" >> .env
           cat .env
         working-directory: ./client
         
