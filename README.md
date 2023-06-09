@@ -5,10 +5,8 @@
   <h3>" 나보다 소중한 반려식물, 당신의 반려식물을 소개하고, 매력적인 콘텐츠를 만들어보세요! "</h3><br />
   <div>반려식물판 소셜 미디어 플랫폼</div>
 </div>
-<strong>배포링크</strong> : https://increaf.com/
 
-- TEST ID : test, PW : q1w2e3r4!!<br />
-(게스트 아이디 및 패스워드 정보입니다)
+<strong>배포링크</strong> : https://increaf.com/
 
 <br />
 
